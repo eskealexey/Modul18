@@ -21,9 +21,13 @@ from django.urls import path
 
 from task2.views import index_func
 from task2.views import index_class
+from task3.views import platform,  games, cart
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('func/', index_func),
     path('class/', index_class.as_view()),
+    path('platform/', platform),
+    path('platform/games/', games),
+    path('platform/cart/', cart.as_view()),
 ]

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Игры</h1>
+    <ul>
+    {% for i in list_ %}
+        <li>
+            {{ i }} <button>Купить</button>
+        </li>
+    {% endfor %}
+    </ul>
+
+<a href="/platform"><button>Вернуться обратно</button></a>
+</body>
+</html>
